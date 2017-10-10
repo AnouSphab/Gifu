@@ -22,7 +22,7 @@ public class Animator {
   private weak var delegate: GIFAnimatable!
 
   /// completionHandler
-  private var completionHandlerPrivate : ((Void) -> Void)?
+  private var completionHandlerPrivate : (() -> Void)?
 
   /// Responsible for starting and stopping the animation.
   private lazy var displayLink: CADisplayLink = { [unowned self] in
